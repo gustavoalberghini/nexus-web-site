@@ -1,0 +1,163 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+  --primary: #5b2dff;
+  --primary-dark: #3a1dcc;
+  --bg-dark: #0f0f1a;
+  --bg-card: #1a1a2e;
+  --text-light: #f5f5f5;
+  --text-gray: #bdbdbd;
+}
+
+/* BASE */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #e0e0ff;
+}
+
+/* NAV */
+.nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+section h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* TEXTOS */
+p {
+  margin-bottom: 15px;
+  color: var(--text-gray);
+}
+
+/* SERVIÇOS */
+#servicos article {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease;
+}
+
+#servicos article:hover {
+  transform: translateY(-5px);
+}
+
+/* PORTFÓLIO */
+#portifolio ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+#portifolio li {
+  margin-bottom: 8px;
+}
+
+/* CONTATO */
+address {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 12px;
+  font-style: normal;
+}
+
+address a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+  color: var(--text-gray);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+form {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--primary-dark);
+}
