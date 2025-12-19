@@ -1,2 +1,3 @@
 # nexus-web-site
-Página da agencis de sites Nexus Web
+https://gustavoalberghini.github.io/nexus-web-site/
+Este é o link oficiaal do site Nexus Web
