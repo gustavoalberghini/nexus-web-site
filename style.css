@@ -161,3 +161,71 @@ button {
 button:hover {
   background: var(--primary-dark);
 }
+
+/* PREÇOS */
+.precos {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.precos h2 {
+  margin-bottom: 35px;
+}
+
+.cards-precos {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.plano {
+  background: var(--bg-card);
+  padding: 30px 25px;
+  border-radius: 16px;
+  width: 280px;
+  border: 1px solid #2a2a45;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plano:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(91, 45, 255, 0.35);
+}
+
+.plano h3 {
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.plano p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  color: var(--text-gray);
+}
+
+.plano span {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #22c55e;
+}
+
+/* PLANO EM DESTAQUE */
+.plano.destaque {
+  border: 2px solid var(--primary);
+  transform: scale(1.05);
+}
+
+.plano.destaque:hover {
+  transform: scale(1.08);
+}
+
+/* RESPONSIVO PREÇOS */
+@media (max-width: 768px) {
+  .cards-precos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
